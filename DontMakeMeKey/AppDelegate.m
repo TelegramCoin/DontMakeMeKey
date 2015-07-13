@@ -8,12 +8,16 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "GFStatusLevelWindow.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 @end
 
 @implementation AppDelegate
+{
+    GFStatusLevelWindow *_extraWindow;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -22,6 +26,15 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    
+    _extraWindow = [[GFStatusLevelWindow alloc] initWithFrame:self.window.bounds];
+    UIViewController *blobContainer = [UIViewController new];
+    UIView *blob = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 20, 20)];
+    blob.backgroundColor = [UIColor greenColor];
+    blobContainer.view.backgroundColor = [UIColor clearColor];
+    [blobContainer.view addSubview:blob];
+    _extraWindow.rootViewController = blobContainer;
+    _extraWindow.hidden = NO;
     return YES;
 }
 

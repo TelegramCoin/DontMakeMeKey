@@ -15,6 +15,7 @@
 		0504CA621B542E07009FB53D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0504CA611B542E07009FB53D /* Images.xcassets */; };
 		0504CA651B542E07009FB53D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0504CA631B542E07009FB53D /* LaunchScreen.xib */; };
 		0504CA711B542E07009FB53D /* DontMakeMeKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0504CA701B542E07009FB53D /* DontMakeMeKeyTests.m */; };
+		0504CA7C1B542E24009FB53D /* GFStatusLevelWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0504CA7B1B542E24009FB53D /* GFStatusLevelWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		0504CA6A1B542E07009FB53D /* DontMakeMeKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontMakeMeKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0504CA6F1B542E07009FB53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0504CA701B542E07009FB53D /* DontMakeMeKeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DontMakeMeKeyTests.m; sourceTree = "<group>"; };
+		0504CA7A1B542E24009FB53D /* GFStatusLevelWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFStatusLevelWindow.h; sourceTree = "<group>"; };
+		0504CA7B1B542E24009FB53D /* GFStatusLevelWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFStatusLevelWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				0504CA591B542E07009FB53D /* MasterViewController.m */,
 				0504CA5B1B542E07009FB53D /* DetailViewController.h */,
 				0504CA5C1B542E07009FB53D /* DetailViewController.m */,
+				0504CA7A1B542E24009FB53D /* GFStatusLevelWindow.h */,
+				0504CA7B1B542E24009FB53D /* GFStatusLevelWindow.m */,
 				0504CA5E1B542E07009FB53D /* Main.storyboard */,
 				0504CA611B542E07009FB53D /* Images.xcassets */,
 				0504CA631B542E07009FB53D /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 			files = (
 				0504CA571B542E07009FB53D /* AppDelegate.m in Sources */,
 				0504CA5A1B542E07009FB53D /* MasterViewController.m in Sources */,
+				0504CA7C1B542E24009FB53D /* GFStatusLevelWindow.m in Sources */,
 				0504CA541B542E07009FB53D /* main.m in Sources */,
 				0504CA5D1B542E07009FB53D /* DetailViewController.m in Sources */,
 			);
